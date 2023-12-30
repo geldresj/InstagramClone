@@ -1,0 +1,126 @@
+[
+  {
+    "id": "1",
+    "createdAt": "1 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+    "description": "1 The company itself is a very successful company. Here he was repulsed by flattery. Shall the pain flee from them, or the wise corrupt, but the pains of the corrupt architect softened by the architect?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "vadimnotjustdev"
+    },
+    "nofComments": 11,
+    "nofLikes": 11,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "id 1. The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "id 2, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "createdAt": "2 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+    "description": "2 The company itself is a very successful company. Here he was repulsed by flattery. Shall the pain flee from them, or the wise corrupt, but the pains of the corrupt architect softened by the architect?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "vadimnotjustdev"
+    },
+    "nofComments": 12,
+    "nofLikes": 12,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "id 1, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "id 2, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "createdAt": "3 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
+    "description": "3 The company itself is a very successful company. Here he was repulsed by flattery. Shall the pain flee from them, or the wise corrupt, but the pains of the corrupt architect softened by the architect?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "username": "vadimnotjustdev"
+    },
+    "nofComments": 13,
+    "nofLikes": 13,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "id 1, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "id 2, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "createdAt": "4 December 2021",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
+    "description": "4 The company itself is a very successful company. Here he was repulsed by flattery. Shall the pain flee from them, or the wise corrupt, but the pains of the corrupt architect softened by the architect?",
+    "user": {
+      "id": "u1",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      "username": "vadimnotjustdev"
+    },
+    "nofComments": 14,
+    "nofLikes": 14,
+    "comments": [
+      {
+        "id": "1",
+        "comment": "id 1, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      },
+      {
+        "id": "2",
+        "comment": "id 2, The company itself is a very successful company. H",
+        "user": {
+          "id": "u1",
+          "username": "vadimnotjustdev"
+        }
+      }
+    ]
+  }
+]
