@@ -4,11 +4,6 @@ import colors from '../theme/colors';
 
 export default StyleSheet.create({
   bold: {fontWeight: fonts.weight.bold},
-  comment: {flexDirection: 'row', alignItems: 'center'},
-  commentText: {
-    color: colors.black,
-    backgroundColor: 'blue',
-  },
   footer: {padding: 10},
   header: {flexDirection: 'row', alignItems: 'center'},
   image: {

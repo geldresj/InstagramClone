@@ -7,23 +7,25 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from '../styles';
+import Comment from '../Comment/Comment';
+import {IPost} from '../../types/models';
+
 interface IFeedPost {
-  post: Post;
-  isVisible?: boolean;
+  post: IPost;
 }
 
-const FeedPost = () => {
+const FeedPost = ({post}: IFeedPost) => {
   return (
     <View style={styles.post}>
       {/*Header */}
       <View style={styles.header}>
         <Image
           source={{
-            uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
+            uri: post.user.image,
           }}
           style={styles.userAvatar}
         />
-        <Text style={styles.userName}>jgeldres </Text>
+        <Text style={styles.userName}>{post.user.username} </Text>
         <Entypo
           name="dots-three-horizontal"
           size={16}
@@ -33,7 +35,7 @@ const FeedPost = () => {
       {/*Content */}
       <Image
         source={{
-          uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+          uri: post.image,
         }}
         style={styles.image}
       />
@@ -69,28 +71,25 @@ const FeedPost = () => {
         {/*Likes */}
         <Text style={styles.text}>
           Liked by <Text style={styles.bold}>andrea </Text> and {'  '}
-          <Text style={styles.bold}>88 others </Text>
+          <Text style={styles.bold}>{post.nofLikes} others </Text>
         </Text>
 
         {/*Post Description */}
         <Text style={styles.text}>
-          <Text style={{fontWeight: fonts.weight.bold}}>jgeldres </Text>
-          QQQQhis is a Post Description, it could be a large text!!! , This text
-          is for test purpose
+          <Text style={{fontWeight: fonts.weight.bold}}>
+            {post.user.username}{' '}
+          </Text>
+          {post.description}
         </Text>
 
         {/*Comments */}
-        <Text> View all 16 Comments</Text>
-        <View style={styles.comment}>
-          <Text style={styles.text}>
-            <Text style={{fontWeight: fonts.weight.bold}}>jgeldres </Text>
-            This is a Comment of Post
-          </Text>
-          <AntDesign name={'hearto'} style={styles.icon} color={colors.black} />
-        </View>
+        <Text> View all {post.nofComments} Comments</Text>
+        {post.comments.map(comment => (
+          <Comment key={comment.id} comment={comment} />
+        ))}
 
         {/* Posted date*/}
-        <Text>19 December 2023</Text>
+        <Text>{post.createdAt}</Text>
       </View>
     </View>
   );
